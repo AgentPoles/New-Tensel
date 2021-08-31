@@ -3,9 +3,11 @@ import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import UserData from "../../data/userdata";
+import { useAlert } from "react-alert";
 
 const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
   const history = useHistory();
+  const Alert = useAlert();
   let user = UserData.find((user) => user.user_id === user_id);
   let requested = "";
   if (buy) {
@@ -14,7 +16,6 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
     requested = "wants to sell " + whattotrade + " to you";
   }
 
-  console.log(user.user_email);
   const [userData, setUserData] = useState({
     user_email: "",
     user_wallet_address: "",
@@ -38,35 +39,31 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
   };
   let handleSubmite = () => {
     console.log("handling submit");
-    // emailjs
-    //   .send(
-    //     "service_04msqui",
-    //     "Trade_ID",
-    //     userData,
-    //     "user_Qi06GFI32mGu84Vc1pZE7"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       handleCancel();
-    //       alert(
-    //         "We have received the info, you will find a yellow button with which you will join the " +
-    //           "correspondent on google chats. Hit the button and wait for you peer there. After two minutes without any invitation from peer, proceed to contact him/her to send the google chat invitation using the contact provided in the next page, make sure all conversations are via google chats. Cheers!"
-    //       );
-    //       history.push({
-    //         pathname: "/shortprofile",
-    //         state: { user_id: user_id },
-    //       });
-    //     },
-    //     (error) => {
-    //       alert(
-    //         "Tensel couldn't receive your mail, something went wrong: " + error
-    //       );
-    //     }
-    // );
-    history.push({
-      pathname: "/shortprofile",
-      state: { user_id: user_id },
-    });
+    emailjs
+      .send(
+        "service_04msqui",
+        "Trade_ID",
+        userData,
+        "user_Qi06GFI32mGu84Vc1pZE7"
+      )
+      .then(
+        (result) => {
+          handleCancel();
+          Alert.show(
+            "gracias! you will now be directed to peers profile, please check your email for the *necessary* guidelines"
+          );
+          history.push({
+            pathname: "/shortprofile",
+            state: { user_id: user_id },
+          });
+        },
+        (error) => {
+          console.log(error);
+          Alert.show(
+            "Tensel couldn't receive your mail, something went wrong: " + error
+          );
+        }
+      );
   };
   return (
     <section className="w-full h-full pt-20 py-40 mb-40 min-h-screen">
@@ -87,7 +84,7 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
                     style={{ display: "flex", flexDirection: "column" }}
                   >
                     <h4 className="text-2xl font-semibold">
-                      Please provide the following details
+                      Please provide the following details accurately
                     </h4>
                     <p className="leading-relaxed mt-1 mb-4 text-blueGray-500">
                       We are watching, you are safe!
@@ -156,7 +153,10 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
                     </div>
                     <div style={{ marginLeft: "auto", marginBottom: "1rem" }}>
                       not sure of balance?{" "}
-                      <a className="text-lightBlue-600" href="">
+                      <a
+                        className="text-lightBlue-600"
+                        style={{ pointerEvents: "none" }}
+                      >
                         {" "}
                         use turnnel
                       </a>
@@ -179,7 +179,7 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
                     </div>
                     <div className="text-center mt-6">
                       <button
-                        className="bg-blueGray-100 text-blueGray-800 active:bg-blueGray-200 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        className="bg-blueGray-100 text-blueGray-800 mb-10 active:bg-blueGray-200 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         type="button"
                         onClick={() => handleCancel()}
                       >

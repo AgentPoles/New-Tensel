@@ -10,7 +10,8 @@ export default function Profile() {
   const { user_id } = (location && location.state) || {};
 
   let user = UserData.find((user) => user.user_id === user_id);
-  const whatsappApi = "https://api.whatsapp.com/send?phone=" + user.contact;
+  const whatsappApi =
+    "https://api.whatsapp.com/send?phone=" + user.user_phone_number;
   return (
     <>
       <Navbar transparent />

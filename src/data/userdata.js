@@ -7,7 +7,7 @@ const Person = [
     user_id: 1890920,
     user_name: "Paule Oamen",
     user_email: "Pauloams16@gmail.com",
-    user_phone_number: "234122961713",
+    user_phone_number: "2348122961713",
     user_short_description: "call me when you are ready to buy or sell",
     user_short_profile: "Tech Lead at Kabura",
     user_location: "Ibeju-Lekki, Lagos, Nigeria",
@@ -20,7 +20,7 @@ const Person = [
     user_phone_number: "2348122961713",
     user_short_description: "We are available to sell and buy, just contact us",
     user_short_profile: "an investment body for Kabura's team members",
-    user_location: "Located on the Blockchain, Abuja",
+    user_location: "Located on the Blockchain",
     user_profile_photo: Kabura_photo,
   },
   {

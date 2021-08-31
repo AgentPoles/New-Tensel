@@ -135,8 +135,8 @@ export default function CardTable({ color, message, peerData }) {
                             {seller.name}
                           </span>
                           {seller.verified && (
-                            <span className="ml-3 mr-3 text-emerald-500">
-                              <i className="fas fa-certificate"></i>
+                            <span className="ml-3 mr-3 text-blueGray-300">
+                              <i class="fas fa-check-circle"></i>
                             </span>
                           )}
                         </th>
