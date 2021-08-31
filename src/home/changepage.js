@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
+import { config } from "@react-spring/core";
 
 import styles from "../assets/styles/module.css";
 
@@ -16,7 +17,10 @@ export default function App() {
   });
 
   return (
-    <div className={styles.container} onClick={() => toggle(!open)}>
+    <div
+      className={styles.container + "bg-blueGray-600"}
+      onClick={() => toggle(!open)}
+    >
       <animated.svg
         className={styles.svg}
         style={{ scale, opacity }}

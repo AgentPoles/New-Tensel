@@ -5,6 +5,7 @@ import Home from "./home/home";
 import Toogle from "./home/toogle";
 import ViaPeer from "./viapeer/index";
 import ShortProfile from "./viapeer/shortprofile";
+import NotAvailable from "home/notavailable";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/profile" exact component={Profile} />
         <Route path="/" exact component={Home} />
         <Route path="/shortprofile" exact component={ShortProfile} />
+        <Route path="/notavailable" exact component={NotAvailable} />
         {/* add redirect for first page */}
         <Redirect from="*" to="/" />
       </Switch>

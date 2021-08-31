@@ -12,12 +12,15 @@ const slides = [
   "url(" + require("assets/img/girlc.png").default + ")",
   "url(" + require("assets/img/boyc.png").default + ")",
   "url(" + require("assets/img/girld.png").default + ")",
-
+  "url(" + require("assets/img/boyd.png").default + ")",
   "url(" + require("assets/img/girle.png").default + ")",
   "url(" + require("assets/img/boye.png").default + ")",
   "url(" + require("assets/img/girlf.png").default + ")",
   "url(" + require("assets/img/boyf.png").default + ")",
   "url(" + require("assets/img/girlg.png").default + ")",
+  "url(" + require("assets/img/girlg.png").default + ")",
+  "url(" + require("assets/img/boyh.png").default + ")",
+  "url(" + require("assets/img/girlh.png").default + ")",
 ];
 
 export default function App() {
@@ -37,7 +40,7 @@ export default function App() {
     return () => clearTimeout(t);
   }, []);
   return (
-    <div className="flex fill center">
+    <div className="flex fill center shadow-xl rounded-full h-auto align-middle border-none">
       {transitions((style, i) => (
         <animated.div
           style={{
@@ -51,6 +54,7 @@ export default function App() {
             willChange: "opacity",
             ...style,
             backgroundImage: slides[i],
+            borderRadius: 50,
           }}
         />
       ))}
