@@ -3,11 +3,10 @@ import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import UserData from "../../data/userdata";
-import { useAlert } from "react-alert";
 
 const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
   const history = useHistory();
-  const Alert = useAlert();
+
   let user = UserData.find((user) => user.user_id === user_id);
   let requested = "";
   if (buy) {
@@ -15,6 +14,8 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
   } else {
     requested = "wants to sell " + whattotrade + " to you";
   }
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const [userData, setUserData] = useState({
     user_email: "",
@@ -38,6 +39,7 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
     });
   };
   let handleSubmite = () => {
+    setIsLoading(true);
     console.log("handling submit");
     emailjs
       .send(
@@ -49,7 +51,8 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
       .then(
         (result) => {
           handleCancel();
-          Alert.show(
+          setIsLoading(false);
+          alert(
             "gracias! you will now be directed to peers profile, please check your email for the *necessary* guidelines"
           );
           history.push({
@@ -58,8 +61,9 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
           });
         },
         (error) => {
+          setIsLoading(false);
           console.log(error);
-          Alert.show(
+          alert(
             "Tensel couldn't receive your mail, something went wrong: " + error
           );
         }
@@ -178,6 +182,7 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
                       />
                     </div>
                     <div className="text-center mt-6">
+                      {isLoading && <i class="fas fa-cog fa-spin"></i>}
                       <button
                         className="bg-blueGray-100 text-blueGray-800 mb-10 active:bg-blueGray-200 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         type="button"
