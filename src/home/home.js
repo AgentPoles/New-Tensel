@@ -47,7 +47,7 @@ const Home = () => {
                 </p>
                 <Link to="/ViaPeer">
                   <a className="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg">
-                    Transact with Person{" "}
+                    Peer to Peer (P2P){" "}
                   </a>
                 </Link>
                 <a
@@ -123,7 +123,7 @@ const Home = () => {
                   target="_blank"
                   className="github-star mt-4 inline-block text-white font-normal px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-1sm shadow hover:shadow-lg"
                 >
-                  Transact with Person{" "}
+                  Peer to Peer (P2P){" "}
                 </a>
               </Link>
 
