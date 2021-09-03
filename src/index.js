@@ -1,21 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { transitions, positions, Provider as AlertProvider } from "react-alert";
-import AlertTemplate from "react-alert-template-mui";
+
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/styles/tailwind.css";
 
 import App from "./app";
 
-const options = {
-  position: positions.MIDDLE,
-};
-
 ReactDOM.render(
   <React.StrictMode>
-    <AlertProvider template={AlertTemplate} {...options}>
-      <App />
-    </AlertProvider>
+    <App />
   </React.StrictMode>,
 
   document.getElementById("root")
