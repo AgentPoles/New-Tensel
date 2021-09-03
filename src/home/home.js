@@ -89,7 +89,7 @@ const Home = () => {
         //   className="section-styles"
         // >
         <section className=" bg-blueGray-600 py-20 md:py-0 overflow-hidden">
-          <div className="container px-4 mx-auto">
+          <div className="container overflow-x-hidden mx-auto">
             <Navbar transparent />
             <div className="flex flex-wrap justify-center align-center">
               <div className="w-full mt-64 md:w-5/12 px-12 md:px-4  md:mt-24">
