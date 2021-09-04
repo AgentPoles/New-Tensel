@@ -117,7 +117,7 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
                   </span>
                 </p>
                 <h3 className="font-semibold text-3xl">
-                  Yes! we has received a record of your request
+                  Yes! we have received a record of your request
                 </h3>
                 <p className="text-blueGray-500 text-lg leading-relaxed mt-4 mb-4">
                   You will now be directed to {user.user_name}'s profile.
