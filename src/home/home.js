@@ -54,19 +54,19 @@ const Home = () => {
                   style={{ pointerEvents: "none" }}
                   className="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                 >
-                  Transact Via Institution{" "}
+                  Transact Via Institution (Soon){" "}
                 </a>
                 <a
                   style={{ pointerEvents: "none" }}
                   className="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                 >
-                  Transact with AI{" "}
+                  Transact with AI (Soon){" "}
                 </a>
                 <a
                   style={{ pointerEvents: "none" }}
                   className="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                 >
-                  Trade with Contracts{" "}
+                  Trade with Contracts (Soon){" "}
                 </a>
               </div>
 
@@ -131,20 +131,20 @@ const Home = () => {
                 className="github-star mt-4 inline-block text-white font-normal px-3 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                 style={{ pointerEvents: "none" }}
               >
-                Transact Via Institution{" "}
+                Transact Via Institution (Soon){" "}
               </a>
 
               <a
                 className="github-star mt-4 inline-block text-white font-normal px-3 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                 style={{ pointerEvents: "none" }}
               >
-                Transact with AI{" "}
+                Transact with AI (Soon){" "}
               </a>
               <a
                 className="github-star mt-4 inline-block text-white font-normal px-3 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                 style={{ pointerEvents: "none" }}
               >
-                Trade with Contracts{" "}
+                Trade with Contracts (Soon){" "}
               </a>
             </div>
           </div>
