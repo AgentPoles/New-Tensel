@@ -29,6 +29,7 @@
     "react-scripts": "4.0.3",
     "react-spring": "^9.2.4",
     "tailwindcss": "2.0.1",
+    "uniqid": "^5.4.0",
     "yup": "^0.32.9"
   },
   "scripts": {

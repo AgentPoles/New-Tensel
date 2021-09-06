@@ -6,10 +6,11 @@ import UserData from "../../data/userdata";
 import { Link } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
+import uniqid from "uniqid";
 
 const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
   const history = useHistory();
-
+  // console.log(uniqid("tensel-"));
   const SignupSchema = Yup.object().shape({
     user_wallet_address: Yup.string()
       .min(25, "Too Short!")
@@ -35,13 +36,15 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
     requested = "wants to sell " + whattotrade + " to you";
   }
   const [sentMail, setSentMail] = useState(false);
+
   const [isLoading, setIsLoading] = useState(false);
 
   const [userData, setUserData] = useState({
     user_email: "",
     user_wallet_address: "",
-    user_current_balance: "",
+    transaction_id: uniqid("tensel-"),
     peer_email: "",
+    peer_name: "",
     message: "",
     requested_service: "",
     requested_amount: "",
@@ -55,8 +58,10 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
       ...userData,
       [e.target.name]: e.target.value,
       peer_email: user.user_email,
+      peer_name: user.user_name,
       requested_service: requested,
     });
+    console.log(userData.peer_name);
   };
 
   let handleGotIt = (user_id) => {
@@ -76,7 +81,10 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
   let handleSubmite = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    console.log("handling submit");
+    // setUserData({ ...userData, transaction_id: uniqid("tensel-") });
+
+    console.log(userData.transaction_id);
+
     emailjs
       .send(
         "service_04msqui",
@@ -215,7 +223,7 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
                                 <div>{errors.user_wallet_address}</div>
                               ) : null}
                             </div>
-                            {/* <div className="relative w-full mb-3 mt-2">
+                            <div className="relative w-full mb-3 mt-2">
                               <label
                                 className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                                 htmlFor="wallet_address"
@@ -234,9 +242,9 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
                               touched.requested_amount ? (
                                 <div>{errors.requested_amount}</div>
                               ) : null}
-                            </div> */}
+                            </div>
 
-                            <div className="relative w-full mb-3 mt-2">
+                            {/* <div className="relative w-full mb-3 mt-2">
                               <label
                                 className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                                 htmlFor="Amount Currently in Wallet"
@@ -255,8 +263,8 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
                               touched.user_current_balance ? (
                                 <div>{errors.user_current_balance}</div>
                               ) : null}
-                            </div>
-                            <div
+                            </div> */}
+                            {/* <div
                               style={{
                                 marginLeft: "auto",
                                 marginBottom: "1rem",
@@ -270,7 +278,7 @@ const OrderMail = ({ showModal, setShowModal, user_id, whattotrade, buy }) => {
                                 {" "}
                                 use turnnel
                               </a>
-                            </div>
+                            </div> */}
                             <div className="relative w-full mb-3">
                               <label
                                 className="block uppercase text-blueGray-600 text-xs font-bold mb-2"

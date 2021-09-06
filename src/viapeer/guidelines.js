@@ -146,27 +146,13 @@ export default function Guidelines() {
                   First things first
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                  Immediately you initiate a buy or sell, before accessing the
-                  buyer's or seller's profile, you are required to provide some
-                  information. Based on this information, a mail is sent to the
-                  peer (buyer or seller), with you in copy. Before making any
-                  exchange or payments, Your peer (buyer or seller) is to reply{" "}
-                  <b>"confirm"</b> to the mail with you and tensel in copy. This
-                  will help us know that he/she has agreed to transact with you.
-                  If no reply (no mail) after 2 mins you can proceed to contact
-                  him or her <br />
-                  <b>NOTE:</b> "tensel.usefull@gmail.com" must be in copy in the
-                  received mail, else it is not valid.{" "}
-                  <a
-                    href="https://www.phrasemix.com/phrases/copy-someone-on-an-email-message"
-                    target="_blank"
-                    className="font-bold text-blueGray-700 hover:text-blueGray-500 ease-linear transition-all duration-150"
-                  >
-                    {" "}
-                    see here
-                    <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
-                  </a>
-                  what it means to be in copy in a mail.
+                  When you contact the buyer or seller, ensure he or she sends
+                  you a mail with the word <b>"confirm"</b> and with{" "}
+                  <b>tensel.usefull@gmail.com</b> in copy also confirm that the{" "}
+                  email used to reply you is the{" "}
+                  <b>buyer's/seller's email address</b> in the mail tensel sent
+                  to you when you requested the trade. This must happen before
+                  you start the exchange!
                 </p>
               </div>
 
@@ -178,13 +164,11 @@ export default function Guidelines() {
                   Contacting Peer
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                  If you got a response mail from the email address (shown in{" "}
-                  peer's profile page') with tensel.usefull@gmail.com in copy ,
-                  Contact peer (buyer or seller) and let him/her know you are
-                  immediately ready for the trade. If you didnt get a response
-                  mail after 2mins as stated in step one, also contact peer, and
-                  ensure that he/she sends the reponse mail before any exchange
-                  starts
+                  If you got a response mail from the buyer's/seller's email{" "}
+                  address with tensel.usefull@gmail.com in copy , inform the
+                  buyer/seller that you are ready for the trade, he/she will{" "}
+                  provide you with an account number if you are buying a digital
+                  asset or wallet address if you are selling a digital asset.
                 </p>
               </div>
             </div>
@@ -197,11 +181,11 @@ export default function Guidelines() {
                   Exchange
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                  You are to start the exchange. This means you are to make
-                  payment first when you want to buy or send asset first when
-                  you want to sell. Once you do this, notify the peer by call or
-                  chat and wait for his/her exchange <br />
-                  <b>kindly know that </b> your peer already provided a
+                  You are to start the exchange. This means you are to pay first
+                  when you want to buy or send asset first when you want to
+                  sell. Once you do this, notify the peer by call or chat and
+                  wait for his/her exchange <br />
+                  <b>kindly know that </b> your peer already provided a{" "}
                   <b> collateral</b> to Tensel, so you are covered.
                 </p>
               </div>
@@ -214,11 +198,13 @@ export default function Guidelines() {
                   After the Exchange
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                  After the exchange, if everything run's smoothly, you are to
-                  reply to the mail your peer sent to you earlier, with the word
-                  "satisfied". If there is any challenge, no panics, try to
+                  After the exchange, if everything run's smoothly, you are to{" "}
+                  {""}
+                  reply to the mail your peer sent to you earlier, with the word{" "}
+                  "satisfied". If there is any challenge, no panics, try to{" "}
                   resolve it amicably cause it could be due to some constraints.
-                  if not, then Contact Tensel.
+                  if not, then Contact Tensel via tensel.usefull@gmail.com or{" "}
+                  call +2348122961713
                 </p>
               </div>
             </div>
