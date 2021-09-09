@@ -16,7 +16,7 @@ const Person = [
   {
     user_id: 1890921,
     user_name: "Kabura Cooperative",
-    user_email: "Paule.oamen@gmail.com",
+    user_email: "kabura.finance@gmail.com",
     user_phone_number: "2348122961713",
     user_short_description: "We are available to sell and buy, just contact us",
     user_short_profile: "an investment body for Kabura's team members",

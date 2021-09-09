@@ -37,7 +37,7 @@ const Buyers = [
   {
     name: "The Bull Squad",
     img: secondImage,
-    rate: 539,
+    rate: 545,
     availableAmount: 400,
     rateUnit: "N/$",
     availableUnit: "BUSD",

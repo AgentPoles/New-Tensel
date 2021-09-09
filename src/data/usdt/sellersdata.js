@@ -5,7 +5,7 @@ const Buyers = [
   {
     name: "Kabura Coperative",
     img: firstImage,
-    rate: 539,
+    rate: 540,
     availableAmount: 20,
     rateUnit: "N/$",
     availableUnit: "USDT",
@@ -21,7 +21,7 @@ const Buyers = [
   {
     name: "The Bull Squad",
     img: secondImage,
-    rate: 539,
+    rate: 545,
     availableAmount: 400,
     rateUnit: "N/$",
     availableUnit: "USDT",
