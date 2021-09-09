@@ -4,7 +4,7 @@ const Sellers = [
   {
     name: "The Bull Squad",
     img: firstImage,
-    rate: 526.5,
+    rate: 530,
     availableAmount: 1000,
     rateUnit: "N/$",
     availableUnit: "USDT",

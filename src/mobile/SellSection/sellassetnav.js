@@ -150,18 +150,27 @@ const Tabs = () => {
                     message={"Peers you can sell to"}
                     peerData={USDTBuyers}
                   />
+                  <small className="block ml-40 font-small leading-normal mt-0 mb-2 text-blueGray-400">
+                    Scroll left or right
+                  </small>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <PeerListDisplay
                     message={"Peers you can sell to"}
                     peerData={BUSDBuyers}
                   />
+                  <small className="block ml-40 font-small leading-normal mt-0 mb-2 text-blueGray-400">
+                    Scroll left or right
+                  </small>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                   <PeerListDisplay
                     message={"Peers you can sell to"}
                     peerData={BTCBuyers}
                   />
+                  <small className="block ml-40 font-small leading-normal mt-0 mb-2 text-blueGray-400">
+                    Scroll left or right
+                  </small>
                 </div>
                 <div className={openTab === 4 ? "block" : "hidden"} id="link3">
                   <PeerListDisplay

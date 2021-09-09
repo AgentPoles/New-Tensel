@@ -5,11 +5,11 @@ const Buyers = [
   {
     name: "Kabura Coperative",
     img: firstImage,
-    rate: 528.5,
+    rate: 539,
     availableAmount: 20,
     rateUnit: "N/$",
     availableUnit: "USDT",
-    progress: "0%",
+    progress: "100%",
     verified: true,
     contact: "2348053606317",
     buy: false,
@@ -21,7 +21,7 @@ const Buyers = [
   {
     name: "The Bull Squad",
     img: secondImage,
-    rate: 529.5,
+    rate: 539,
     availableAmount: 400,
     rateUnit: "N/$",
     availableUnit: "USDT",

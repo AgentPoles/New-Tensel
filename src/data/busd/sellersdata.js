@@ -6,11 +6,11 @@ const Buyers = [
   {
     name: "Paule Oamen",
     img: thirdImage,
-    rate: 529.5,
+    rate: 530,
     availableAmount: 20,
     rateUnit: "N/$",
     availableUnit: "BUSD",
-    progress: "90%",
+    progress: "100%",
     verified: false,
     contact: "2348122961713",
     buy: false,
@@ -21,8 +21,8 @@ const Buyers = [
   {
     name: "Kabura Coperative",
     img: firstImage,
-    rate: 528.5,
-    availableAmount: 20,
+    rate: 525,
+    availableAmount: 50,
     rateUnit: "N/$",
     availableUnit: "BUSD",
     progress: "0%",
@@ -37,7 +37,7 @@ const Buyers = [
   {
     name: "The Bull Squad",
     img: secondImage,
-    rate: 529.5,
+    rate: 539,
     availableAmount: 400,
     rateUnit: "N/$",
     availableUnit: "BUSD",
