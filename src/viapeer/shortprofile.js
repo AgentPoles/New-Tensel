@@ -91,10 +91,10 @@ export default function Profile() {
 
                       <div className="lg:mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          <i class="fas fa-mobile-alt text-lightBlue-600"></i>
+                          <i class="fas fa-envelope text-red-500"></i>
                         </span>
                         <span className="text-sm text-blueGray-500">
-                          {user.user_phone_number}
+                          {user.user_email}
                         </span>
                       </div>
                     </div>
