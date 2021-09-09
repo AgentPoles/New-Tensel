@@ -150,27 +150,42 @@ const Tabs = () => {
                     message={"Peers you can buy from"}
                     peerData={USDTSellers}
                   />
+                  <small className="block ml-40 font-small leading-normal mt-0 mb-2 text-blueGray-400">
+                    Scroll left or right
+                  </small>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <PeerListDisplay
                     messgage={"Peers you can buy from"}
                     peerData={BUSDSellers}
                   />
+                  <small className="block ml-40 font-small leading-normal mt-0 mb-2 text-blueGray-400">
+                    Scroll left or right
+                  </small>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                   <PeerListDisplay
                     message={"Peers you can buy from"}
                     peerData={BTCSellers}
                   />
+                  <small className="block ml-40 font-small leading-normal mt-0 mb-2 text-blueGray-400">
+                    Scroll left or right
+                  </small>
                 </div>
                 <div className={openTab === 4 ? "block" : "hidden"} id="link3">
                   <PeerListDisplay
                     message={"Peers you can buy from"}
                     peerData={ETHSellers}
                   />
+                  {/* <small className="block ml-40 font-small leading-normal mt-0 mb-2 text-blueGray-400">
+                    Scroll left or right
+                  </small> */}
                 </div>
                 <div className={openTab === 5 ? "block" : "hidden"} id="link3">
                   <PeerListDisplay />
+                  {/* <small className="block ml-40 font-small leading-normal mt-0 mb-2 text-blueGray-400">
+                    Scroll left or right
+                  </small> */}
                 </div>
               </div>
             </div>
