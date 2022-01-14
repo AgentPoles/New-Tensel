@@ -45,8 +45,11 @@ const Home = () => {
                 <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-400">
                   welcome, get onboard!
                 </p>
-                <Link to="/ViaPeer">
-                  <a className="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg">
+                <Link>
+                  <a
+                    style={{ pointerEvents: "none" }}
+                    className="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
+                  >
                     Peer to Peer (P2P){" "}
                   </a>
                 </Link>
@@ -122,7 +125,7 @@ const Home = () => {
                   href=""
                   target="_blank"
                   className="github-star mt-4 inline-block text-white font-normal px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-1sm shadow hover:shadow-lg"
- style={{ pointerEvents: "none" }}
+                  style={{ pointerEvents: "none" }}
                 >
                   Peer to Peer (P2P){" "}
                 </a>
