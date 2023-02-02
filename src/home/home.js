@@ -45,9 +45,8 @@ const Home = () => {
                 <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-400">
                   welcome, get onboard!
                 </p>
-                <Link>
+                <Link to="/ViaPeer">
                   <a
-                    style={{ pointerEvents: "none" }}
                     className="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                   >
                     Peer to Peer (P2P){" "}
